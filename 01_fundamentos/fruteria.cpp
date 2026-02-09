@@ -5,7 +5,7 @@
 #include <iostream>
 using namespace std;
 
-int main(){
+int main() {
     int platanos = 6;
     int manzanas = 4;
     double precioKilo = 28.50;

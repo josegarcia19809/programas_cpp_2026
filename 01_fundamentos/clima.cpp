@@ -5,13 +5,13 @@
 #include <iostream>
 using namespace std;
 
-int main(){
+int main() {
     int dia = 1;
     float temperatura = 29.6;
     float viento = 12.8;
 
     cout << "*********************" << endl;
-    cout << "Registro del clima" << endl<<endl;
+    cout << "Registro del clima" << endl << endl;
     cout << "Día del mes: " << dia << endl;
     cout << "Temperatura: " << temperatura << "ºC" << endl;
     cout << "Velocidad del viento: " << viento << " km/h" << endl;
