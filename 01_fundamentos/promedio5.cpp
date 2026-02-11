@@ -4,8 +4,7 @@
 #include <iostream>
 using namespace std;
 
-int main()
-{
+int main() {
     float numero1 = 28;
     float numero2 = 32;
     float numero3 = 37;

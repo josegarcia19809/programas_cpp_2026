@@ -4,8 +4,7 @@
 #include <iostream>
 using namespace std;
 
-int main()
-{
+int main() {
     int numero1 = 100;
     int numero2 = 50;
     int total = numero1 + numero2;
