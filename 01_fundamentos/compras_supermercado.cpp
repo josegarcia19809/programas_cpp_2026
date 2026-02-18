@@ -4,26 +4,25 @@
 #include <iostream>
 using namespace std;
 
-int main()
-{
+int main() {
     float precioProducto1 = 0.0f;
     float precioProducto2 = 0.0f;
     float precioProducto3 = 0.0f;
-    int cantidadProductos = 0;
     int porcentajeDescuento = 0;
 
+    int cantidadProductos = 0;
     // Pedir datos al usuario
     cout << "Coloca el precio del producto 1: ";
     cin >> precioProducto1;
+    cantidadProductos = cantidadProductos + 1;
 
     cout << "Coloca el precio del producto 2: ";
     cin >> precioProducto2;
+    cantidadProductos = cantidadProductos + 1;
 
-    cout << "Coloca el precio del produto 3: ";
+    cout << "Coloca el precio del producto 3: ";
     cin >> precioProducto3;
-
-    cout << "Coloca la cantidad de productos: ";
-    cin >> cantidadProductos;
+    cantidadProductos = cantidadProductos + 1;
 
     cout << "Coloca el porcentaje de descuento: ";
     cin >> porcentajeDescuento;
@@ -38,7 +37,9 @@ int main()
     float totalPagar = subtotalCompra - montoDescuento;
 
     // Mostrar resultados
-    cout << "subtotal: $" << subtotalCompra << endl;
-    cout << "descuento: $" << montoDescuento << endl;
+    cout << "Subtotal: $" << subtotalCompra << endl;
+    cout << "Descuento: $" << montoDescuento << endl;
+    cout << "Total: $" << totalPagar << endl;
+    cout << "Cantidad de productos comprados: " << cantidadProductos << endl;
     return 0;
 }
