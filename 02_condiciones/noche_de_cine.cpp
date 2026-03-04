@@ -7,7 +7,7 @@ int main()
     const double COSTO_BOLETO = 75;
     int boletosComprados;
 
-    cout << "¿Cuantos boletos compro? ";
+    cout << "¿Cuántos boletos compro? ";
     cin >> boletosComprados;
 
     double totalAPagar = (boletosComprados * COSTO_BOLETO);

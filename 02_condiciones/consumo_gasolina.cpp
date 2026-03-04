@@ -2,8 +2,7 @@
 #include <iostream>
 using namespace std;
 
-int main()
-{
+int main() {
     double kilometrosRecorridos;
     const double KILOMETROS_POR_LITRO = 12;
     cout << "Consumo de gasolina" << endl;
@@ -12,12 +11,9 @@ int main()
 
     double litrosConsumidos = kilometrosRecorridos / KILOMETROS_POR_LITRO;
     cout << "Litros consumidos: " << litrosConsumidos << endl;
-    if (litrosConsumidos > 40)
-    {
+    if (litrosConsumidos > 40) {
         cout << "El consumo de gasolina fue alto." << endl;
-    }
-    else
-    {
+    } else {
         cout << "El consumo de gasolina fue normal." << endl;
     }
 
