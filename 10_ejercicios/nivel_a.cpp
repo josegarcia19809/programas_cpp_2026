@@ -29,6 +29,26 @@ void sucursales(int no_lista) {
     cout << "porcentajeVentasAltas: " << porcentajeVentasAltas << endl;
 }
 
+void bebidasEnergeticas(int noLista) {
+    int no_lista = noLista;
+    int numClientes = 20500;
+
+    int porcentajeBebidasEnergeticas = 15 * no_lista;
+    int porcentajeSaborCitricos = 8 * no_lista;
+
+    double clientesBEnergeticas = numClientes * (porcentajeBebidasEnergeticas / 100.0);
+    double clientesBSaborCitricos = clientesBEnergeticas * (porcentajeSaborCitricos / 100.0);
+
+    cout << "clientesBEnergeticas: " << clientesBEnergeticas << endl;
+    cout << "clientesBSaborCitricos: " << clientesBSaborCitricos << endl;
+}
+
+
 int main() {
-    sucursales(4);
+    for (int i = 1; i <= 10; ++i) {
+        cout << endl;
+        cout << "----------------------------------" << i << endl;
+        bebidasEnergeticas(i);
+        sucursales(i);
+    }
 }

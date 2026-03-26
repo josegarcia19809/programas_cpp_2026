@@ -30,6 +30,25 @@ void biblioteca(int no_lista) {
     cout << "porcentajeAtrasados: " << porcentajeAtrasados << endl;
 }
 
+void comisiones(int noLista) {
+    int no_lista = noLista;
+    int acciones = 950;
+    double precio_accion = 35.00;
+    double comision = no_lista;
+
+    double monto_por_acciones = acciones * precio_accion;
+    double monto_comision = monto_por_acciones * (comision / 100);
+    double monto_por_acciones_y_comision = monto_por_acciones + monto_comision;
+
+    cout << "monto_comision: " << monto_comision << endl;
+    cout << "monto_por_acciones_y_comision: " << monto_por_acciones_y_comision << endl;
+}
+
 int main() {
-    biblioteca(4);
+    for (int i = 11; i <= 19; ++i) {
+        cout << endl;
+        cout << "----------------------------------" << i << endl;
+        comisiones(i);
+        biblioteca(i);
+    }
 }
