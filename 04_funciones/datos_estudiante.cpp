@@ -27,11 +27,11 @@ void imprimirLinea() {
 }
 
 void mostrarNombre() {
-    cout << "Mi nombre es Buzz Ligtyear" << endl;
+    cout << "Mi nombre es José L García" << endl;
 }
 
 void visualizarCarrera() {
-    cout << "Mi carrera es: Informatica Administrativa " << endl;
+    cout << "Mi carrera es: Informatica Administrativa" << endl;
 }
 
 void desplegarPromedio() {

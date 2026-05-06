@@ -6,6 +6,7 @@
 #include <string>
 
 using namespace std;
+
 // Prototipo de función
 void mostrarMensajeBienvenida();
 
@@ -15,15 +16,5 @@ int main() {
 }
 
 void mostrarMensajeBienvenida() {
-    cout<<"Bienvenido al curso de Programación"<<endl;
+    cout << "Bienvenido al curso de Programación" << endl;
 }
-
-
-
-
-
-
-
-
-
-
