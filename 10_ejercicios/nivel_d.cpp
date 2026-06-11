@@ -12,9 +12,9 @@ void valores_p(int noLista) {
     double p2 = (numero * 10) * (pow(numero, 2)) / 10.0;
     double p3 = numero + 15 / 100.0;
 
-    cout <<"p1: "<< p1 << endl;
-    cout <<"p2: "<< p2 << endl;
-    cout <<"p3: "<< p3 << endl;
+    cout << "p1: " << p1 << endl;
+    cout << "p2: " << p2 << endl;
+    cout << "p3: " << p3 << endl;
 }
 
 void valores_total_salida(int noLista) {
@@ -33,9 +33,8 @@ void valores_total_salida(int noLista) {
         salida = sqrt(total) + (c1 * numero);
     }
 
-    cout<<"total: "<<total<<endl;
-    cout<<"salida: "<<salida<<endl;
-
+    cout << "total: " << total << endl;
+    cout << "salida: " << salida << endl;
 }
 
 void valores_s1_x(int noLista) {
@@ -45,6 +44,7 @@ void valores_s1_x(int noLista) {
     int cont = 10;
 
     while (cont >= 4) {
+        cout << cont << endl;
         s1 = s1 + num;
         cont = cont - 1;
     }
@@ -55,9 +55,8 @@ void valores_s1_x(int noLista) {
     }
 
 
-    cout<<"s1: "<<s1<<endl;
-    cout<<"x: "<<x<<endl;
-
+    cout << "s1: " << s1 << endl;
+    cout << "x: " << x << endl;
 }
 
 void ventas(int noLista) {
@@ -102,12 +101,12 @@ int main(int argc, char *argv[]) {
     for (int i = 1; i <= 11; ++i) {
         cout << "------------------------------------" << i << endl;
         valores_p(i);
-        cout<<endl;
+        cout << endl;
         valores_total_salida(i);
-        cout<<endl;
+        cout << endl;
         valores_s1_x(i);
-        cout<<endl;
+        cout << endl;
         ventas(i);
-        cout<<endl;
+        cout << endl;
     }
 }
